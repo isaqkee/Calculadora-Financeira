@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADS Investimentos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- cabeçalho -->
+    <header>
+        <h1>ADS Investimentos</h1>
+    </header>
+
+    <!-- navegação -->
+    <nav class="navegacao">
+        <ul>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#conteudoInvestimentos">Investimentos</a></li>
+        </ul>
+    </nav>
+
+    <!-- conteúdo -->
+    <div class="conteudo">
+        <!-- conteúdo valores -->
+        <div class="sobre" id="sobre">
+            <h2>Sobre Nós</h2>
+            <p class="introducao">A ADS Investimentos é uma empresa especializada em soluções de renda fixa, comprometida em oferecer opções seguras e rentáveis para o crescimento financeiro de nossos clientes. Com anos de experiência no mercado, nossa equipe combina expertise, transparência e inovação para criar estratégias personalizadas que atendem às necessidades de cada investidor. Nosso objetivo é ser a principal referência em investimentos no Brasil, garantindo confiança e excelência em cada operação.</p>
+            <div class="sobreItem">
+                <img src="images/Missao.jpg" alt="Missão">
+                <p><strong>Missão:</strong> Proporcionar soluções de investimento seguras e rentáveis, promovendo o crescimento financeiro de nossos clientes.</p>
+            </div>
+            <div class="sobreItem">
+                <img src="images/Visao2.jpg" alt="Visão">
+                <p><strong>Visão:</strong> Ser a principal referência em investimentos de renda fixa no Brasil, reconhecida pela transparência e excelência.</p>
+            </div>
+            <div class="sobreItem">
+                <img src="images/Valores.jpg" alt="Valores">
+                <p><strong>Valores:</strong> Integridade, inovação, confiança e foco no cliente.</p>
+            </div>
+        </div>
+        <!-- conteúdo investimento -->
+        <div class="conteudoInvestimentos" id="conteudoInvestimentos">
+            <h2>Investimentos</h2>
+            <div class="investimentos" id="investimentos">
+                <!-- Os investimentos serão renderizados aqui via JavaScript -->
+
+            </div>
+            <!-- conteúdo calculadora -->
+            <div class="calculadora" id="calculadora">
+                    <h2>Calculadora de Investimentos</h2>
+                    <p>Investimento Selecionado: <span id="investimentoSelecionado" class="investimentoSelecionado">Nenhum selecionado</span></p>
+                    <label for="valorInicial">Valor Inicial (R$):</label>
+                    <input type="number" id="valorInicial" placeholder="Ex: 1000" min="0">
+                    <label for="tempo">Tempo (meses):</label>
+                    <input type="number" id="tempo" placeholder="Ex: 12" min="1">
+                    <button onclick="calcularInvestimento()">Calcular</button>
+                    <div class="resultado" id="resultado">
+                        <!-- Os resultado serão exibidos aqui após calculados via JavaScript -->
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- rodapé -->
+    <footer>
+        <p>© 2025 ADS Investimentos. Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:contato@adsinvestimentos.com">contato@adsinvestimentos.com</a></p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
